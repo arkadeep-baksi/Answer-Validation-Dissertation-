@@ -22,8 +22,6 @@ To build the base model we used the SOTA BERT for Sequence Classification. Initi
 
 Accuracy of the Model : 0.82
 
-Model Link : https://drive.google.com/drive/folders/1-5n3plMqfd_ROZmG2zddfBDeSPdcgufb?usp=sharing
-
 With this we are done with our base line model
 
 #### 2) Fine-Tuning base line model on Augmented SQuAD 2.0
@@ -45,8 +43,6 @@ Accuracy of the Base-Model on Test data before fine-tuning: 0.83
 
 Accuracy of the Base-Model on Test data after fine-tuning: 0.86
 
-Model Link : https://drive.google.com/drive/folders/1-CjVC4He2HebCAiNVJWt9kUhUx2PbiQ2?usp=sharing
-
 #### 3) Further Fine-Tuning the Model on PAWS and PAWS-Augmented SQuAD
 
 After we have fine-tuned the model on Augmented SQuAD 2.0 we thought that the sapmles we have trained the model so far does'nt have much lexical overlap. We were curious how would the model perform incase the candidate answer have high lexical overlap with the correct answer but is actually incorrect. To test this we figured out some popular dataset w.r.t to this area of NLP called PAWS( Paraphrase Adversaries for Word Scrambling). We figured out that the publically available PAWS dataset is a good point to start. However again we need some contextuality and hence needed to generate PAWS like paraphrases for SQuAD 2.0
@@ -59,6 +55,3 @@ After this appending the PAWS dataset with PAWS-Augmented SQuAD 2.0 we fine tune
 Accuracy of the Model on Test data before fine-tuning on PAWS : 0.50
 
 Accuracy of the Model on Test data after fine-tuning on PAWS : 0.80
-
-Model Link : https://drive.google.com/drive/folders/1-jDkPD33FLtxJwTUs_8wzIOJNl5ZCGn-?usp=sharing
-
